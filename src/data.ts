@@ -66,42 +66,58 @@ export const products: Product[] = [
 export const featuredProducts = products.slice(0, 3);
 
 export const blogPosts: BlogPost[] = [
-  {
-    id: 'b1',
-    title: 'Benefits of Organic Skincare',
-    date: 'June 15, 2026',
-    content: 'Organic skincare products are free from harmful chemicals and rich in natural nutrients that nourish the skin. They are gentle, environmentally friendly, and suitable for most skin types.',
-  },
+ {
+  id: 'b1',
+  title: '10 Benefits of Natural Skincare Products for Healthy Skin',
+  date: 'June 15, 2026',
+  content: [
+    'Natural skincare products are made with ingredients derived from nature and can be a simple choice for an everyday skincare routine.',
+    '• Gentle skincare for everyday use',
+    '• Natural ingredients such as aloe vera, rosehip oil and green tea',
+    '• Helps keep skin hydrated and nourished',
+    '• Supports a healthy-looking skin barrier',
+    '• Suitable for different skincare routines',
+    '• Plant-based ingredients can complement daily skin care',
+    '• Can be part of an eco-conscious beauty routine',
+    '• Helps create a simple and consistent skincare routine',
+    '• Natural ingredients provide a nature-inspired approach to skincare',
+    '• Makes it easier to choose skincare based on your skin needs',
+    'Choosing the right natural skincare products and following a consistent routine can help you maintain healthy, nourished-looking skin.'
+  ],
+},
   {
     id: 'b2',
-    title: 'Daily Skincare Routine for Glowing Skin',
+    title: 'Daily Natural Skincare Routine for Healthy, Glowing Skin',
     date: 'June 10, 2026',
     content: [
-      'A healthy skincare routine includes:',
-      '• Cleansing',
-      '• Toning',
-      '• Moisturizing',
-      '• Sun Protection',
-      'Consistency is the key to achieving healthy and radiant skin.'
-    ],
+   'A simple and consistent natural skincare routine can help keep your skin clean, hydrated and healthy-looking.',
+    '• Start with a gentle cleanser',
+    '• Use a suitable toner if needed',
+    '• Apply a hydrating serum',
+    '• Moisturize your skin',
+    '• Apply sunscreen during the day',
+    '• Choose products according to your skin type',
+    'Consistency is important when building a healthy skincare routine.'
+],
   },
   {
     id: 'b3',
     title: 'Why Hydration Matters for Healthy Skin',
     date: 'June 5, 2026',
-    content: 'Proper hydration helps maintain skin elasticity, prevents dryness, and supports the skin\'s natural barrier function.',
+    content: 'Keeping the skin hydrated is an important part of a healthy skincare routine. Proper hydration helps reduce the feeling of dryness and supports soft, comfortable and healthy-looking skin. Using suitable moisturizers and drinking enough water can complement your daily skincare routine.',
   },
   {
     id: 'b4',
-    title: 'Natural Ingredients That Transform Your Skin',
+    title: 'Natural Skincare Ingredients for Healthy Skin',
     date: 'May 28, 2026',
-    content: [
-      'Some of the most effective skincare ingredients include:',
-      '• Aloe Vera',
-      '• Turmeric',
-      '• Rosehip Oil',
-      '• Green Tea',
-      '• Lavender'
-    ],
+   content: [
+    'Natural ingredients can be an important part of a simple skincare routine. Different ingredients offer different benefits for the skin.',
+    '• Aloe Vera – commonly used for soothing and hydration',
+    '• Turmeric – traditionally used in skincare routines',
+    '• Rosehip Oil – a source of nourishing plant oils',
+    '• Green Tea – contains antioxidant compounds',
+    '• Lavender – commonly used in skincare and personal care products',
+    'Choosing ingredients according to your skin needs can help you create a simple and consistent natural skincare routine.'
+],
   }
 ];

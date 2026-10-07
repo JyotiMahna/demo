@@ -119,9 +119,9 @@ export default function Layout({ children }: LayoutProps) {
               "Nature's Touch for Radiant Skin"
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-brand-200 hover:text-white transition-colors" aria-label="Instagram">
-                <Instagram className="w-5 h-5" />
-              </a>
+              <a href="https://www.instagram.com/pure.petalsskincare?stkn=NHMxc2pod3o1ZjZ3" target="_blank" rel="noopener noreferrer" className="text-brand-200 hover:text-white transition-colors" aria-label="PurePetals Instagram">
+  <Instagram className="w-5 h-5" />
+</a>
               <a href="#" className="text-brand-200 hover:text-white transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>

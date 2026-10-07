@@ -16,7 +16,7 @@ export default function Products() {
     "sku": p.id,
     "offers": {
       "@type": "Offer",
-      "url": "https://pure-petals.netlify.app/products",
+      "url": "https://purepetals.vercel.app/products",
       "priceCurrency": "INR",
       "price": p.price.toString(),
       "priceValidUntil": "2027-12-31",
@@ -49,23 +49,32 @@ export default function Products() {
   return (
     <div className="animate-in fade-in duration-700 pb-24">
       <Helmet>
-        <title>Products | PurePetals Skincare</title>
-        <meta name="description" content="Shop our collection of 100% natural, gentle, and effective skincare products. Including serums, moisturizers, masks, and more." />
-        <link rel="canonical" href="https://pure-petals.netlify.app/products" />
+       <title>Organic Skincare Products | PurePetals</title>
+       <meta
+  name="description"
+  content="Shop PurePetals organic skincare products made with natural ingredients, including serums, moisturizers, masks and more for healthy, glowing skin."
+/>
+        <link rel="canonical" href="https://purepetals.vercel.app/products"
+/>
         <script type="application/ld+json">
           {JSON.stringify(productsSchema)}
         </script>
       </Helmet>
       {/* Page Header */}
       <div className="bg-leaf-800 text-white py-20 px-4 text-center">
-        <h1 className="text-4xl md:text-5xl font-serif mb-4">Our Collection</h1>
-        <p className="text-leaf-100 max-w-2xl mx-auto text-lg font-light">
-          Gentle, effective, and 100% natural.
-        </p>
+       <h1 className="text-4xl md:text-5xl font-serif mb-4"> Organic Skincare Products
+</h1>
+       <p className="text-leaf-100 max-w-2xl mx-auto text-lg font-light"> Discover natural and organic skincare products made with gentle ingredients for healthy, nourished and glowing skin.
+</p>
       </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="mt-16 text-center">
+            <p className="text-brand-800 mb-4">Want to learn more about natural skincare?</p>
+
+  <a href="/blog" className="text-leaf-800 font-medium hover:text-leaf-600" > Read our natural skincare tips →
+  </a>
+</div>
           {products.map(p => (
             <div key={p.id} className="bg-white group transition-all duration-500 hover:shadow-2xl border border-brand-100 flex flex-col h-full overflow-hidden">
               <div className="h-72 w-full bg-brand-50 relative flex items-center justify-center text-brand-200 overflow-hidden">
@@ -76,6 +85,11 @@ export default function Products() {
                 )}
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-brand-900 text-xs font-bold px-3 py-1.5 uppercase tracking-widest shadow-sm">
                   ₹{p.price}
+                <div className="mt-16 text-center"> <p className="text-brand-800 mb-4"> Want to learn more about natural skincare?
+  </p>
+  <a href="/blog" className="text-leaf-800 font-medium hover:text-leaf-600">Read our natural skincare tips →
+  </a>
+</div>
                 </div>
               </div>
               <div className="p-8 flex flex-col flex-grow">

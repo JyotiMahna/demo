@@ -23,7 +23,7 @@ export default function Home() {
     "sku": p.id,
     "offers": {
       "@type": "Offer",
-      "url": "https://pure-petals.netlify.app/products",
+      "url": "https://purepetals.vercel.app/products",
       "priceCurrency": "INR",
       "price": p.price.toString(),
       "priceValidUntil": "2027-12-31",
@@ -56,42 +56,52 @@ export default function Home() {
   return (
     <div className="animate-in fade-in duration-700">
       <Helmet>
-        <title>Home | PurePetals Skincare</title>
-        <meta name="description" content="Discover the power of nature with our premium organic skincare products. PurePetals brings you healthy skin with pure ingredients." />
-        <link rel="canonical" href="https://pure-petals.netlify.app/" />
-        <link rel="preload" as="image" href="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=2000&auto=format&fit=crop" />
-        <script type="application/ld+json">
-          {JSON.stringify(featuredProductsSchema)}
-        </script>
-      </Helmet>
+  <title>PurePetals | Natural & Organic Skincare Products</title>
+
+  <meta
+    name="description"
+    content="Discover PurePetals natural skincare products made with organic ingredients for healthy, glowing and nourished skin."
+  />
+
+  <link
+    rel="canonical"
+    href="https://purepetals.vercel.app/"
+  />
+
+  <link
+    rel="preload"
+    as="image"
+   href="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=75&w=900&auto=format&fit=crop"
+  />
+
+  <script type="application/ld+json">
+    {JSON.stringify(featuredProductsSchema)}
+  </script>
+</Helmet>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-brand-50 py-32 sm:py-48 lg:py-56">
         {/* Elegant Hero Background Image */}
-        <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=2000&auto=format&fit=crop" 
-            alt="Natural Skincare Beauty" 
-            className="w-full h-full object-cover object-center"
-            fetchpriority="high"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-50/95 via-brand-50/80 to-transparent" />
-        </div>
+       <div className="absolute inset-0">
+  <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=75&w=900&auto=format&fit=crop" alt="Natural Skincare Beauty" className="w-full h-full object-cover object-center"
+    fetchPriority="high" />
+</div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-left">
           <span className="text-leaf-800 font-semibold tracking-widest uppercase text-sm mb-6 block">
             Nature's Touch for Radiant Skin
           </span>
           <h1 className="text-5xl sm:text-7xl font-serif text-brand-900 mb-8 max-w-2xl leading-[1.1]">
-            Welcome to <span className="text-leaf-800 italic block mt-2">PurePetals</span>
-          </h1>
-          <p className="text-lg sm:text-xl text-brand-800 max-w-xl mb-12 leading-relaxed font-light">
-            Discover the power of nature with our premium organic skincare products. At PurePetals, we believe healthy skin starts with pure ingredients sourced directly from nature.
-          </p>
-          <button 
-            onClick={goToProducts}
-            className="inline-flex items-center justify-center px-10 py-4 text-sm tracking-widest uppercase font-medium text-white bg-brand-900 hover:bg-leaf-800 transition-colors duration-300 shadow-sm hover:shadow-md rounded-none"
-          >
-            Shop Now
-          </button>
+  Natural Skincare Products
+  <span className="text-leaf-800 italic block mt-2">
+    Made with Organic Ingredients
+  </span>
+</h1>
+        <p className="text-lg sm:text-xl text-brand-800 max-w-xl mb-12 leading-relaxed font-light">
+  Discover our natural skincare products made with carefully selected organic
+  ingredients for healthy, nourished and glowing skin.
+</p>
+         <button onClick={() => navigate('/products')} className="text-leaf-800 font-medium hover:text-leaf-600">
+  Explore our natural skincare products →
+</button>
         </div>
       </section>
 
