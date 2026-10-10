@@ -79,12 +79,16 @@ export default function Home() {
   </script>
 </Helmet>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-brand-50 py-32 sm:py-48 lg:py-56">
-        {/* Elegant Hero Background Image */}
-       <div className="absolute inset-0">
-  <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=75&w=900&auto=format&fit=crop" alt="Natural Skincare Beauty" className="w-full h-full object-cover object-center"
-    fetchPriority="high" />
-</div>
+<section className="relative overflow-hidden bg-brand-50 py-32 sm:py-48 lg:py-56">
+  {/* Hero Background Image */}
+  <div className="absolute inset-0">
+    <img
+      src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=60&w=650&auto=format&fit=crop"
+      alt="Natural Skincare Beauty"
+      className="w-full h-full object-cover object-center"
+      fetchPriority="high"
+    />
+  </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-left">
           <span className="text-leaf-800 font-semibold tracking-widest uppercase text-sm mb-6 block">
             Nature's Touch for Radiant Skin
