@@ -67,13 +67,6 @@ export default function Home() {
     rel="canonical"
     href="https://purepetals.vercel.app/"
   />
-
- <link
-  rel="preload"
-  as="image"
-  href="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=75&w=900&auto=format&fit=crop"
-  fetchPriority="high"
-/>
   <script type="application/ld+json">
     {JSON.stringify(featuredProductsSchema)}
   </script>
