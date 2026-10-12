@@ -54,7 +54,7 @@ export default function Home() {
   }));
 
   return (
-    <div className="animate-in fade-in duration-700">
+    <div>
       <Helmet>
   <title>PurePetals | Natural & Organic Skincare Products</title>
 
